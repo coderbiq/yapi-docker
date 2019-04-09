@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+    yapi:
+        image: yapi
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./config.json:/api/config.json
+        # entrypoint: ['node', '/api/vendors/server/install.js']
+        entrypoint: ['node', '/api/vendors/server/app.js']
+
+    mongo:
+        image: mongo
+        volumes:
+            - yapiMongoData:/data/db
+
+volumes:
+    yapiMongoData:

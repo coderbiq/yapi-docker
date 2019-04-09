@@ -1,0 +1,9 @@
+{
+    "port": "3000",
+    "adminAccount": "biqiang@baijiutang.com",
+    "db": {
+       "servername": "mongo",
+       "DATABASE": "yapi",
+       "port": "27017"
+    }
+ }
