@@ -3,13 +3,12 @@ version: '3'
 services:
 
     yapi:
-        build:
-            context: ./
-        image: bjt/yapi
+        image: coderbee/yapi
         ports:
             - "3000:3000"
         volumes:
             - ./config.json:/api/config.json
+        # install
         # entrypoint: ['node', '/api/vendors/server/install.js']
         entrypoint: ['node', '/api/vendors/server/app.js']
 
