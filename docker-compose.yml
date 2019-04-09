@@ -3,7 +3,9 @@ version: '3'
 services:
 
     yapi:
-        image: yapi
+        build:
+            context: ./
+        image: bjt/yapi
         ports:
             - "3000:3000"
         volumes:
