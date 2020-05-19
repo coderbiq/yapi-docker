@@ -15,7 +15,4 @@ services:
     mongo:
         image: mongo
         volumes:
-            - yapiMongoData:/data/db
-
-volumes:
-    yapiMongoData:
+            - ./yapiMongoData:/data/db

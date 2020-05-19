@@ -1,7 +1,7 @@
 FROM node:11-alpine as builder
 LABEL maintainer="biqiang <biqiang001@gmail.com>" vendors="1.0"
 
-ENV YAPI_VERSION="1.8.4"
+ENV YAPI_VERSION="1.9.1"
 
 RUN echo -e "https://mirrors.aliyun.com/alpine/v3.6/main/\nhttps://mirrors.aliyun.com/alpine/v3.6/community/" > /etc/apk/repositories \
     && apk add --no-cache git python make openssl tar gcc
